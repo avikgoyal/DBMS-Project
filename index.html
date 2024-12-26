@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Athletics Hub - Gaming Portal</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    /* Add your custom CSS styles here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      overflow: hidden;
+    }
+
+    .video-background video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      opacity: 0.8; /* Adjust the opacity as desired */
+    }
+
+    .container {
+      margin: 50px auto;
+      max-width: 600px;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 28px;
+      color: #333333;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #666666;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      color: #999999;
+    }
+
+    .logo {
+      display: block;
+      width: 150px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Video Background -->
+  <div class="video-background">
+    <video autoplay muted loop>
+      <source src="beach-soccer.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li><a href="index.html"><img class="logo" src="logo.png" alt="Home"></a></li>
+      <li><a href="games.html">Games</a></li>
+      <li><a href="location.html">Locations</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li style="float:right"><a href="login.html">Login</a></li>
+      <li style="float:right"><a href="booking.html">Book Now</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h1>Welcome to Athletics Hub Gaming Portal</h1>
+    <p>Discover various gaming centers based on your location.</p>
+    <p>Select a game, choose a time, and check availability.</p>
+    <p>Pre-booking is available for your convenience.</p>
+    <p>Explore the world of athletics gaming now!</p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 Athletics Hub. All rights reserved.</p>
+  </footer>
+</body>
+</html>

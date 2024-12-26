@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gaming Centers by Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .game-select {
+            margin-bottom: 20px;
+        }
+
+        .center-item {
+            display: none;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .center-item img {
+            width: 200px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .center-item h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .center-item p {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#game-select').change(function () {
+                var selectedGame = $(this).val();
+
+                $('.center-item').hide();
+                $('.' + selectedGame).show();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Select a Game to Find Gaming Centers</h1>
+        <form>
+            <div class="form-group game-select">
+                <label for="game-select">Select a game:</label>
+                <select id="game-select" class="form-control">
+                    <option value="">-- Select a game --</option>
+                    <option value="game1">Cricket</option>
+                    <option value="game2">Football</option>
+                    <option value="game3">Basketball</option>
+                    <option value="game4">Tennis</option>
+                    <option value="game5">Badminton</option>
+                    <option value="game6">Golf</option>
+                    <option value="game7">Baseball</option>
+                    <option value="game8">Volleyball</option>
+                    <option value="game9">Hockey</option>
+                    <option value="game10">Rugby</option>
+                    <option value="game11">Table Tennis</option>
+                    <option value="game12">Squash</option>
+                    <option value="game13">Swimming</option>
+                    <option value="game14">Chess</option>
+                    <option value="game15">Snooker</option>
+                </select>
+            </div>
+        </form>
+
+        <section id="centers">
+            <h2>Gaming Centers that Offer the Selected Game</h2>
+            <div class="row">
+                <div class="col-md-4 center-item game1 game2 game3">
+                    <h3>PlayZone</h3>
+                    <img src="game-center1.jpg" alt="PlayZone">
+                    <p>Description of PlayZone</p>
+                    <p>Games offered: Cricket, Football, Basketball</p>
+                </div>
+                <div class="col-md-4 center-item game1 game4 game5">
+                    <h3>SportsHub</h3>
+                    <img src="game-center2.jpg" alt="SportsHub">
+                    <p>Description of SportsHub</p>
+                    <p>Games offered: Cricket, Tennis, Badminton</p>
+                </div>
+                <div class="col-md-4 center-item game2 game3 game6">
+                    <h3>Basketball Arena</h3>
+                    <img src="game-center3.jpg" alt="Basketball Arena">
+                    <p>Description of Basketball Arena</p>
+                    <p>Games offered: Football, Basketball, Golf</p>
+                </div>
+                <div class="col-md-4 center-item game3 game5 game8">
+                    <h3>Sports World</h3>
+                    <img src="game-center4.jpg" alt="Sports World">
+                    <p>Description of Sports World</p>
+                    <p>Games offered: Basketball, Badminton, Volleyball</p>
+                </div>
+                <div class="col-md-4 center-item game6 game9 game10">
+                    <h3>Golf Masters</h3>
+                    <img src="game-center5.jpg" alt="Golf Masters">
+                    <p>Description of Golf Masters</p>
+                    <p>Games offered: Golf, Hockey, Rugby</p>
+                </div>
+                <div class="col-md-4 center-item game7 game11 game12">
+                    <h3>Baseball Park</h3>
+                    <img src="game-center6.jpg" alt="Baseball Park">
+                    <p>Description of Baseball Park</p>
+                    <p>Games offered: Baseball, Table Tennis, Squash</p>
+                </div>
+                <div class="col-md-4 center-item game8 game13 game14">
+                    <h3>Volleyball Arena</h3>
+                    <img src="game-center7.jpg" alt="Volleyball Arena">
+                    <p>Description of Volleyball Arena</p>
+                    <p>Games offered: Volleyball, Swimming, Chess</p>
+                </div>
+                <div class="col-md-4 center-item game9 game10 game15">
+                    <h3>Hockey Hub</h3>
+                    <img src="game-center8.jpg" alt="Hockey Hub">
+                    <p>Description of Hockey Hub</p>
+                    <p>Games offered: Hockey, Rugby, Snooker</p>
+                </div>
+                <div class="col-md-4 center-item game11 game12 game13">
+                    <h3>Ping Pong Palace</h3>
+                    <img src="game-center9.jpg" alt="Ping Pong Palace">
+                    <p>Description of Ping Pong Palace</p>
+                    <p>Games offered: Table Tennis, Squash, Swimming</p>
+                </div>
+                <div class="col-md-4 center-item game14 game15 game1">
+                    <h3>Mind Sports</h3>
+                    <img src="game-center10.jpg" alt="Mind Sports">
+                    <p>Description of Mind Sports</p>
+                    <p>Games offered: Chess, Snooker, Cricket</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Payment Page</title>
+    <link rel="stylesheet" href="payment.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			margin-top: 50px;
+		}
+
+		input[type="submit"] {
+			padding: 10px;
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			margin-top: 20px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Payment Page</h1>
+	<form action="payment.php" method="post">
+		<label for="mobile-number">Mobile Number:</label>
+		<input type="tel" id="mobile-number" name="mobile" placeholder="Enter your mobile number">
+
+		<label for="upi-id">UPI ID:</label>
+		<input type="text" id="upi-id" name="upi" placeholder="Enter your UPI ID">
+
+		<label for="card-number">Card Number:</label>
+		<input type="text" id="card-number" name="card-number" placeholder="Enter your card number">
+
+		<label for="expiry-date">Expiry Date:</label>
+		<input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY">
+
+		<label for="cvv">CVV:</label>
+		<input type="text" id="cvv" name="cvv" placeholder="Enter CVV">
+
+		<input type="submit" value="Pay Now">
+	</form>
+</body>
+</html>

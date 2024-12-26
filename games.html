@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gaming Centers by Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .center-item {
+            display: none;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#game-select').change(function () {
+                var selectedGame = $(this).val();
+
+                $('.center-item').hide();
+                $('.' + selectedGame).show();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Gaming Centers</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="location.html">Locations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Select a Game to Find Gaming Centers</h1>
+        <form>
+            <div class="form-group">
+                <label for="game-select">Select a game:</label>
+                <select id="game-select" class="form-control">
+                    <option value="">-- Select a game --</option>
+                    <option value="game1">Cricket</option>
+                    <option value="game2">Football</option>
+                    <option value="game3">Basketball</option>
+                    <option value="game4">Tennis</option>
+                    <option value="game5">Badminton</option>
+                    <option value="game6">Golf</option>
+                    <option value="game7">Baseball</option>
+                    <option value="game8">Volleyball</option>
+                    <option value="game9">Hockey</option>
+                    <option value="game10">Rugby</option>
+                    <option value="game11">Table Tennis</option>
+                    <option value="game12">Squash</option>
+                    <option value="game13">Swimming</option>
+                    <option value="game14">Chess</option>
+                    <option value="game15">Snooker</option>
+                </select>
+            </div>
+        </form>
+
+        <section id="centers">
+            <h2>Gaming Centers that Offer the Selected Game</h2>
+            <div class="row">
+                <div class="col-md-4 center-item game1 game2 game3">
+                    <h3>Game Center 1</h3>
+                    <img src="game-center1.jpg" alt="Game Center 1">
+                    <p>Description of Game Center 1</p>
+                    <p>Games offered: Cricket, Football, Basketball</p>
+                </div>
+                <!-- Rest of the code... -->
+            </div>
+        </section>
+    </div>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
